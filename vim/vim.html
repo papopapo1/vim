@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Текствоый редактор Vim</title>
+    <link rel="stylesheet" href="vim.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@0;1&family=Poppins&display=swap'); /* PT Sans (Italic) */
+   
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Poppins&display=swap');  /* PT Sans (Regular) */
+    
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Poppins&display=swap'); /* PT Sans (Bold) */
+    
+    @import url('https://fonts.googleapis.com/css2?family=PT+Mono&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Poppins&display=swap'); /* PT Mono */
+</style>
+<body>
+   <div class="syteBody">
+       <div class="grids">
+           <div class="column1">
+            <div class="leftnote">
+                <img src="pic/1.svg" class="noteImg">
+                <p class="textInNote2">Никто не&nbsp;запрещает использовать для перемещения курсора клавиши-стрелки, такой подход рушит концепцию Vim.</p>
+            </div>
+           </div>
+           <div class="column2">
+                <h1 class="title">Текстовый редактор vim</h1>
+                    <div class="text">
+                    <p><a href="https://www.vim.org/" class="link">Vim</a> &mdash;&nbsp;это модификация текстового редактора&nbsp;Vi, созданного Биллом Джоем в&nbsp;1976&nbsp;году. Vim, в&nbsp;свою очередь, появился спустя 15&nbsp;лет и&nbsp;стал одним из&nbsp;наиболее значимых приложений в&nbsp;истории компьютеров</p>
+                        <p><img src="pic/vim.png" class="img"></p>
+                    <p>Vim использует довольно специфичную по&nbsp;нынешним временам модель управления, полностью построенную на&nbsp;идее модальности в&nbsp;угоду устаревшим клавиатурам, на&nbsp;которых не&nbsp;было стрелок и&nbsp;других уже привычных для нас клавиш.</p>
+                    <p>Несмотря на&nbsp;то, что нужды в&nbsp;Vim сейчас нет, он&nbsp;все еще популярен. Его поклонники образовали чуть&nbsp;ли не&nbsp;религиозный культ, строго верующий в&nbsp;Vim, защищающий его от&nbsp;противников и всячески продвигающий в&nbsp;обществе как лучшее, что могло быть изобретено для редактирования текста.</p>
+                    <p class="subTitle">Чем хорош Vim?</p>
+                    <p>Досконально изучив инструмент и&nbsp;натренировавшись в&nbsp;его использовании, вы&nbsp;становитесь на голову выше других спецов, потому что попросту тратите меньше времени на&nbsp;выполнение рутинных задач. 
+                        Быстрее удаляете строки, быстрее перемещаетесь по&nbsp;коду, быстрее вносите изменения в&nbsp;разных участках файла и&nbsp;приложения целиком. 
+                        При этом тратите не&nbsp;только меньше времени, но&nbsp;и&nbsp;меньше сил.</p>
+                    <p>Вы учите Vim один раз и пользуетесь им везде. Независимо от выбранной О.С., у вас всегда будет доступ к Vim, и он будет таким же, как Vim в любой другой системе (если, конечно, вы не обвешаете редактор на своем ПК плагинами и темами).</p>
+                    <p class="subTitle">А чем плох?</p>
+                    <p>Возникает вопрос, почему Vim не&nbsp;используют все разработчики, раз&nbsp; он&nbsp;такой хороший. Ответ кроется в&nbsp;пороге вхождения. Он&nbsp;настолько высок для нового поколения пользователей&nbsp;ПК, что в интернете до&nbsp;сих пор гуляют мемы про&nbsp;то, как сложно закрыть Vim, если случайно его запустил.</p>                   
+                        <p><img src="pic/mem.png" class="img"></p>
+                    <p>Vim, без преувеличения, сложен в&nbsp;освоении. Даже заставить человека отказаться от использования стрелок и&nbsp;перейти на&nbsp;так называемый «home» -&nbsp; блок клавиш&nbsp;&mdash; тот еще квест.</p>
+                    <p class="subTitle">Как установить Vim и начать им пользоваться?</p>
+                    <p>Если по&nbsp;какой-то причине Vim не&nbsp;установлен в&nbsp;вашей О.С., то&nbsp;его можно установить выполнив команду установки.</p>
+
+                        <div class="code">sudo apt install vim</div>
+
+                    <p class="subTitle">Базовые клавиши для управления</p>
+                    <p>Для начала нужно освоиться в&nbsp;управлении и&nbsp;понять, что можно делать в&nbsp;Vim, а&nbsp;чего нельзя. Чтобы перемещаться по&nbsp;тексту, используем клавиши <button>H</button>&nbsp;&mdash; влево, <button>J</button>&nbsp;&mdash; вниз, <button>K</button>&nbsp;&mdash; наверх, и <button>L</button>&nbsp;&mdash; вправо.</p>
+                    <p>Чтобы удалить текст, мы&nbsp;используем клавишу <button>X</button>.&nbsp;Для выделения текста нужно перейти в визуальный режим при помощи клавиши&nbsp;<button>V</button>.</p>
+                    <p>А чтобы ввести текст, переходим в режим <button>INSERT</button>. Это можно сделать несколькими способами, но вот два основных:</p>
+                    <p>&mdash;&nbsp;Нажатие на&nbsp;клавишу <button>I</button>, чтобы начать ввод текста прямо на&nbsp;месте курсора.</p>
+                    <p>&mdash;&nbsp;Нажатие на&nbsp;клавишу <button>O</button>, чтобы начать ввод на&nbsp;новой линии.</p>
+                    <p>Для выхода из&nbsp;режима <button>INSERT</button>, нажимаем на&nbsp;кнопку <button>Esc</button> или комбинацию клавиш <button>Ctrl</button> + <button></button>.</p>
+                    <p>Продвинутые пользователи переназначают <button>Esc</button> на&nbsp;другие комбинации клавиш, потому что на современных клавиатурах <button>Esc</button> находится слишком далеко и&nbsp;к&nbsp;ней приходится тянуться, а&nbsp;это противоречит концепции Vim.</p>
+                    <p>Чтобы скопировать текст, используем клавишу <button>Y</button>, а&nbsp;чтобы вставить&nbsp;&mdash;<button>P</button>.</p>
+                    <p class="subTitle">А как же выйти из Vim?</p>
+                    <p>Чтобы закрыть Vim, нужно ввести команду <button>:wq</button>. Она запишет внесенные изменения и&nbsp;вернет вас в терминал. Чтобы изменения не&nbsp;сохранялись, надо ввести <button>:q!</button>.</p>
+                </div>
+                </div>
+           <div class="column3">
+            <div class="rightNote1">99% поклонников Vim&nbsp;&mdash; это разработчики и&nbsp;гики</div>
+            <div class="rightNote2">Чтобы освоить Vim и&nbsp;получить от&nbsp;него пользу (и&nbsp;удовольствие, конечно&nbsp;же), надо этого захотеть.</div>
+           </div>
+       </div>
+   </div>
+</body>
+</html>

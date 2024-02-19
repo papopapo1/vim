@@ -1,0 +1,162 @@
+p{
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+span{
+    font-weight: 530;
+}
+
+button{
+    display: inline-flex;
+    padding: 5px 10px;
+    align-items: flex-start;
+    gap: 5px;
+    background: none;
+
+    border-radius: 5px;
+    border: 1px solid #D2D2D2;
+}
+
+:root{
+    --clrNote:  #979797;
+    --clrDef: black;
+    --clrCodeBackground: #454545;
+    --clrCodeText: #D7D7D7;
+}
+
+.syteBody{
+    width: 1280px;
+    margin-inline: auto;
+}
+.grids{
+    display: grid;
+    grid-template-columns: 300px 1fr 300px;
+    grid-gap: 10px;
+}
+
+.link{ 
+    color: var(--clrDef);
+
+    font-family: "PT Sans";
+    text-decoration: none;
+    padding-bottom: -10px;
+    border-bottom: 1.7px solid rgba(0, 0, 0, 0.5);
+}
+
+.title{
+    width: 660px;
+
+    color: var(--clrDef);
+
+    font-family: "PT Sans";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+
+    letter-spacing: 0.04em;
+}
+
+.subTitle{
+    color: var(--clrDef);
+
+    font-family: "PT Sans";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.text{
+    width: 660px;
+
+    color: var(--clrDef);
+    font-family: "PT Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-top: 50px;
+    margin-bottom: 150px;
+
+}
+
+.img{
+    width: 660px;
+}
+
+.rightNote1{
+    width: 247px;
+
+    color: var(--clrNote);
+
+    font-family: "PT Sans";
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-top: 830px;
+}
+
+.rightNote2{
+    width: 247px;
+
+    color: var(--clrNote);
+
+    font-family: "PT Sans";
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 835px;
+}
+
+.leftnote{
+    width: 247px;
+
+    color: var(--clrNote);
+
+    text-align: center;
+    font-family: "PT Sans";
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-top: 2680px;
+
+
+}
+
+.textInNote2{
+    margin-top: 00px;
+    margin-bottom: 0px;
+}
+
+.noteImg{
+    left: 60x;
+}
+
+.code{
+
+    display: flex;
+    width: 620px;
+    padding: 10px 20px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 10px;
+    background: var(--clrCodeBackground);
+    color: var(--clrCodeText);
+    
+    margin-top: 50px;
+
+    text-align: center;
+    font-family: "PT Mono";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
